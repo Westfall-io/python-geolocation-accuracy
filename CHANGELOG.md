@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.0.1 (2024-12-04)
+
+### :zap:
+
+* :zap: Adding linked variables into python ([`3032da2`](https://github.com/Westfall-io/python-geolocation-accuracy/commit/3032da2fd32800a26dba801de2d04039eb19cb38))
+
 ## v0.0.0 (2024-11-13)
 
 ### Other
