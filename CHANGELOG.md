@@ -1,6 +1,12 @@
 # CHANGELOG
 
+## v0.0.3 (2024-12-04)
+
 ## v0.0.2 (2024-12-04)
+
+### :bug:
+
+* :bug: Adding numpy to requirements ([`e21ee7f`](https://github.com/Westfall-io/python-geolocation-accuracy/commit/e21ee7f10ddfd08ed45cee40d1060dcb76f55533))
 
 ## v0.0.1 (2024-12-04)
 
