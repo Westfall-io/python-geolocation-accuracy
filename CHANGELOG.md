@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.0.5 (2024-12-04)
+
+### :bug:
+
+* :bug: Fixed an issue where the file needs to write string ([`c84925b`](https://github.com/Westfall-io/python-geolocation-accuracy/commit/c84925bd96e47a6266656e7b391889f2c5ae0516))
+
 ## v0.0.4 (2024-12-04)
 
 ## v0.0.3 (2024-12-04)

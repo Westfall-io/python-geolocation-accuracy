@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-geolocation-accuracy"
-version = "0.0.4"
+version = "0.0.5"
 description = "Sample container that does a simple geolocation check"
 authors = ["Christopher Cox"]
 license = "MIT"
@@ -61,7 +61,7 @@ patch_tags = [
 
 [project]
 name = "python-geolocation-accuracy"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
   { name="Christopher Cox", email="chris.cox@westfall.io" },
 ]
