@@ -131,6 +131,6 @@ if __name__ == '__main__':
     print('Maximum: {} m'.format(b[-1][1]))
     np.savetxt("geolocation_output.csv", b, fmt='%.4f', delimiter=",")
     with open("geolocation_output_max.csv", 'w') as f:
-        f.write(b[-1][1])
+        f.write(str(b[-1][1]))
 
     print("--- %s seconds ---" % (time.time() - start_time))
