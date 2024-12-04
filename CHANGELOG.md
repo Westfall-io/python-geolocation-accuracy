@@ -1,6 +1,12 @@
 # CHANGELOG
 
+## v0.0.4 (2024-12-04)
+
 ## v0.0.3 (2024-12-04)
+
+### :bug:
+
+* :bug: Fixed an issue with numpy output for 0D array ([`2d0833a`](https://github.com/Westfall-io/python-geolocation-accuracy/commit/2d0833acf9d632238195bea808da99b4a915240e))
 
 ## v0.0.2 (2024-12-04)
 
