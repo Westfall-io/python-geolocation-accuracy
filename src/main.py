@@ -22,22 +22,26 @@ def asin(value):
     return math.asin(value)*180/math.pi
 
 def main():
-    #try:
-    #    gps_accuracy = "{{ digitalforge('gps_accuracy') }}" #mm
-    #    focal_length = "{{ digitalforge('focal_length') }}" # cm
-    #    distance = "{{ digitalforge('semimajor_axis')}}" #km
-    #except:
-
-    # Defaults if this didn't work
-    gps_accuracy = 1.5 #m
-    # https://www.aac-clyde.space/wp-content/uploads/2021/11/GNSS-701.pdf
-    adc_accuracy_pitch = 30 # arcseconds
-    adc_accuracy_yaw = 30 # arcseconds
-    #adc_accuracy_roll = 200 # arcseconds
-    # https://www.aac-clyde.space/what-we-do/space-products-components/adcs/st200
-    distance = 500 # km
-    min_graze = 3 # deg
-    max_graze = 90 # deg
+    try:
+        gps_accuracy = float("{{ digitalforge('gps_accuracy') }}") #mm
+        adc_accuracy_pitch = float("{{ digitalforge('adc_accuracy_pitch') }}") # arcseconds
+        adc_accuracy_yaw = float("{{ digitalforge('adc_accuracy_yaw') }}") # arcseconds
+        #adc_accuracy_roll = 200 # arcseconds
+        # https://www.aac-clyde.space/what-we-do/space-products-components/adcs/st200
+        distance = float("{{ digitalforge('distance') }}") # km
+        min_graze = float("{{ digitalforge('min_graze') }}") # deg
+        max_graze = float("{{ digitalforge('max_graze') }}") # deg
+    except:
+        # Defaults if this didn't work
+        gps_accuracy = 1.5 #m
+        # https://www.aac-clyde.space/wp-content/uploads/2021/11/GNSS-701.pdf
+        adc_accuracy_pitch = 30 # arcseconds
+        adc_accuracy_yaw = 30 # arcseconds
+        #adc_accuracy_roll = 200 # arcseconds
+        # https://www.aac-clyde.space/what-we-do/space-products-components/adcs/st200
+        distance = 500 # km
+        min_graze = 3 # deg
+        max_graze = 90 # deg
 
     theta_error = random.random()*360 # deg
     phi_error = random.random()*180-90 # deg
